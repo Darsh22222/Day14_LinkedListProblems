@@ -9,7 +9,7 @@
             while (condition)
             {
                 LinkedList linkedList = new LinkedList();
-                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Exit");
+                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Inserting Data between 56 and 70\n4. Exit");
                 Console.WriteLine("Enter your choice\n");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -27,6 +27,13 @@
                         linkedList.AddInReverseOrder(56);
                         linkedList.Display(); // 56, 30, 70 - reverse order printed
                         Console.WriteLine("\n");
+                        break;
+                    case 3:
+                        linkedList.Add(56);
+                        linkedList.Add(70);
+                        Console.WriteLine("Adding at position 1");
+                        linkedList.InsertAtParticularPosition(1, 30);
+                        linkedList.Display();
                         break;
                     default:
                         condition = false;
