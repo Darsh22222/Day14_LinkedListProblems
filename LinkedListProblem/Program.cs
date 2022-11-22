@@ -9,7 +9,7 @@
             while (condition)
             {
                 LinkedList linkedList = new LinkedList();
-                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Inserting Data between 56 and 70\n4. Exit");
+                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Inserting Data between 56 and 70\n4. Remove the first Node from the Linked List\n5. Exit");
                 Console.WriteLine("Enter your choice\n");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
