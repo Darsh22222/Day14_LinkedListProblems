@@ -33,7 +33,15 @@
                         linkedList.Add(70);
                         Console.WriteLine("Adding at position 1");
                         linkedList.InsertAtParticularPosition(1, 30);
-                        linkedList.Display();
+                        linkedList.Display(); // 30 will be inserted between 56 % 70
+                        Console.WriteLine("\n");
+                        break;
+                    case 4:
+                        linkedList.Add(56);
+                        linkedList.Add(30);
+                        linkedList.Add(70);
+                        linkedList.RemoveFirstNode();
+                        linkedList.Display(); // 56 will be removed as it is first node
                         break;
                     default:
                         condition = false;

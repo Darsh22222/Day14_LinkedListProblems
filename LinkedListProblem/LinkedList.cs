@@ -81,5 +81,13 @@ namespace LinkedListProblem
             prev.next = newestNode;
             return this.head;
         }
+        public void RemoveFirstNode() // 56 will be removed
+        {
+            if (this.head == null)
+            {
+                Console.WriteLine("LinkedList is empty");
+            }
+            this.head = this.head.next;
+        }
     }
 }
