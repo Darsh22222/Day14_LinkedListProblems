@@ -9,7 +9,7 @@
             while (condition)
             {
                 LinkedList linkedList = new LinkedList();
-                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Inserting Data between 56 and 70" + "\n4. Remove the first Node from the Linked List\n5. Remove the last Node from the Linked List" + "\n6. Exit");
+                Console.WriteLine("1. Create Linked List\n2. Create LinkedList in Reverse Order\n3. Inserting Data between 56 and 70" + "\n4. Remove the first Node from the Linked List\n5. Remove the last Node from the Linked List" + "\n6. Search the particular Node\n7. Exit");
                 Console.WriteLine("Enter your choice\n");
                 int choice = Convert.ToInt32(Console.ReadLine());
                 switch (choice)
@@ -49,6 +49,13 @@
                         linkedList.Add(70);
                         linkedList.RemoveLastNode();
                         linkedList.Display();
+                        break;
+                    case 6:
+                        linkedList.Add(56);
+                        linkedList.Add(70);
+                        int a = linkedList.Search(30);
+                        Console.WriteLine("The position of node with value 30 in Linked List is " + a);
+                        Console.WriteLine("\n");
                         break;
                     default:
                         condition = false;
